@@ -63,3 +63,5 @@ Working on this project helped me:
 - Understand real-world application structures and how console interfaces work.
 - Gain experience in designing logic that simulates real-life services.
 
+- ![Image](https://github.com/user-attachments/assets/5d4787d1-3f3c-45cd-9002-c833ec28437a)
+
