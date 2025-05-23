@@ -64,4 +64,5 @@ Working on this project helped me:
 - Gain experience in designing logic that simulates real-life services.
 
 - ![Image](https://github.com/user-attachments/assets/5d4787d1-3f3c-45cd-9002-c833ec28437a)
+- ![Image](https://github.com/user-attachments/assets/2e9a1e03-fbea-4860-afaf-469fe09b6b2c)
 
