@@ -1,0 +1,89 @@
+import java.util.*;
+
+public class OnlineReservationSystem {
+    static Scanner sc = new Scanner(System.in);
+    static ArrayList<String> reservations = new ArrayList<>();
+
+    public static void main(String[] args) {
+        int choice;
+        do {
+            System.out.println("\n=== Online Reservation System ===");
+            System.out.println("1. Reserve a ticket");
+            System.out.println("2. Cancel a ticket");
+            System.out.println("3. View all reservations");
+            System.out.println("4. Exit");
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
+            sc.nextLine(); // clear newline
+
+            switch (choice) {
+                case 1:
+                    reserveTicket();
+                    break;
+                case 2:
+                    cancelTicket();
+                    break;
+                case 3:
+                    viewReservations();
+                    break;
+                case 4:
+                    System.out.println("Thank you for using the system!");
+                    break;
+                default:
+                    System.out.println("Invalid choice!");
+            }
+        } while (choice != 4);
+    }
+
+    public static void reserveTicket() {
+        System.out.print("Enter Name: ");
+        String name = sc.nextLine();
+        System.out.print("Enter Age: ");
+        int age = sc.nextInt();
+        sc.nextLine(); // clear newline
+        System.out.print("Enter Gender: ");
+        String gender = sc.nextLine();
+        System.out.print("Enter Source: ");
+        String source = sc.nextLine();
+        System.out.print("Enter Destination: ");
+        String destination = sc.nextLine();
+
+        String record = name + "," + age + "," + gender + "," + source + "," + destination;
+        reservations.add(record);
+        System.out.println("Ticket reserved successfully!");
+    }
+
+    public static void cancelTicket() {
+        System.out.print("Enter name to cancel reservation: ");
+        String name = sc.nextLine();
+        boolean found = false;
+
+        Iterator<String> itr = reservations.iterator();
+        while (itr.hasNext()) {
+            String ticket = itr.next();
+            if (ticket.startsWith(name + ",")) {
+                itr.remove();
+                found = true;
+                System.out.println("Reservation cancelled for " + name);
+                break;
+            }
+        }
+
+        if (!found) {
+            System.out.println("No reservation found with that name.");
+        }
+    }
+
+    public static void viewReservations() {
+        if (reservations.isEmpty()) {
+            System.out.println("No reservations found.");
+        } else {
+            System.out.println("\n--- All Reservations ---");
+            for (String ticket : reservations) {
+                String[] data = ticket.split(",");
+                System.out.println("Name: " + data[0] + ", Age: " + data[1] + ", Gender: " + data[2] +
+                        ", From: " + data[3] + ", To: " + data[4]);
+            }
+        }
+    }
+}
