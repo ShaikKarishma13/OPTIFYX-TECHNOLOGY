@@ -9,11 +9,13 @@
 
 
 
-##Project Overview
+## Project Overview
 
 The *Online Reservation System* is a console-based application developed using Java. It is designed to simulate a basic reservation system that allows users to perform operations such as booking a ticket, cancelling a reservation, and viewing all existing reservations. The application emphasizes simplicity and efficiency, ensuring that even users with minimal technical knowledge can interact with it easily.
 
 This project was developed as a part of my learning journey and academic task to strengthen core programming concepts, especially in Java. It serves as a fundamental model for real-time reservation systems used in railways, buses, airlines, and other ticketing platforms.
+
+---
 
 ## Features
 
@@ -21,6 +23,8 @@ This project was developed as a part of my learning journey and academic task to
 - *Cancellation of Reservation*: Users can cancel their reservation by providing their name.
 - *View All Reservations*: Displays a list of all currently booked tickets with full details.
 - *Interactive Console UI*: A menu-driven interface that loops until the user chooses to exit.
+
+---
 
 ## Tools and Technologies Used
 
@@ -30,6 +34,8 @@ This project was developed as a part of my learning journey and academic task to
 - *Integrated Development Environment (IDE)*: [VS Code](https://code.visualstudio.com/) was used for development, with Java extensions for support.
 - *JDK (Java Development Kit)*: Required for compiling and executing the Java program.
 - *Git & GitHub*: Version control and cloud repository for storing and sharing the project code.
+
+---
 
 ## How It Works
 
@@ -41,6 +47,8 @@ When the user runs the program, a menu with four choices is displayed:
 4. *Exit*: Terminates the program.
 
 The system operates in a continuous loop until the user decides to exit, making it convenient for handling multiple operations in a single session.
+
+---
 
 ## Applicability
 
@@ -54,6 +62,8 @@ While this application is a basic model, the concept and functionality behind it
 
 This project demonstrates the core workflow of such systems and can be extended to support advanced features like user authentication, data persistence using files or databases, and graphical interfaces.
 
+---
+
 ## Learning Outcomes
 
 Working on this project helped me:
@@ -63,6 +73,9 @@ Working on this project helped me:
 - Improve user input handling with the Scanner class.
 - Understand real-world application structures and how console interfaces work.
 - Gain experience in designing logic that simulates real-life services.
+
+---
+##OUTPUT:
 
 - ![Image](https://github.com/user-attachments/assets/5d4787d1-3f3c-45cd-9002-c833ec28437a)
 - ![Image](https://github.com/user-attachments/assets/2e9a1e03-fbea-4860-afaf-469fe09b6b2c)
